@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="620" viewBox="0 0 1200 620">
+<rect width="1200" height="620" fill="white"/>
+<style>
+.title{font:700 28px Arial;fill:#111}.head{font:700 20px Arial;fill:#111}.text{font:16px Arial;fill:#222}.small{font:14px Arial;fill:#444}
+.box{stroke:#444;stroke-width:2;rx:12}.arrow{stroke:#555;stroke-width:3;fill:none;marker-end:url(#a)}
+</style>
+<defs><marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#555"/></marker></defs>
+<text x="40" y="48" class="title">SQL Server Sales Data Warehouse</text>
+<text x="40" y="78" class="small">CRM + ERP CSV → Bronze → Silver → Gold Star Schema → Analytics</text>
+
+<rect x="40" y="140" width="190" height="330" class="box" fill="#f7f7f7"/>
+<text x="105" y="175" class="head">Sources</text>
+<text x="70" y="225" class="text">CRM</text>
+<text x="70" y="255" class="small">Customer</text>
+<text x="70" y="280" class="small">Product</text>
+<text x="70" y="305" class="small">Sales</text>
+<text x="70" y="360" class="text">ERP</text>
+<text x="70" y="390" class="small">Customer</text>
+<text x="70" y="415" class="small">Location</text>
+<text x="70" y="440" class="small">Categories</text>
+
+<rect x="290" y="140" width="240" height="330" class="box" fill="#fff1dd"/>
+<text x="375" y="175" class="head">Bronze</text>
+<text x="330" y="225" class="text">Raw source representation</text>
+<text x="330" y="265" class="small">• CSV ingestion</text>
+<text x="330" y="295" class="small">• No business transformation</text>
+<text x="330" y="325" class="small">• Full refresh</text>
+<text x="330" y="370" class="small">Tables:</text>
+<text x="330" y="395" class="small">crm_* / erp_*</text>
+
+<rect x="590" y="140" width="240" height="330" class="box" fill="#f3f3f3"/>
+<text x="675" y="175" class="head">Silver</text>
+<text x="630" y="225" class="text">Cleaned & standardized</text>
+<text x="630" y="265" class="small">• Deduplication</text>
+<text x="630" y="295" class="small">• Standardization</text>
+<text x="630" y="325" class="small">• Date conversion</text>
+<text x="630" y="355" class="small">• Data integration</text>
+<text x="630" y="385" class="small">• Derived values</text>
+<text x="630" y="415" class="small">• Quality controls</text>
+
+<rect x="890" y="120" width="270" height="370" class="box" fill="#fff8dc"/>
+<text x="985" y="155" class="head">Gold</text>
+<text x="930" y="205" class="text">Physical star schema</text>
+<text x="930" y="245" class="small">dim_customers</text>
+<text x="930" y="275" class="small">dim_products</text>
+<text x="930" y="305" class="small">dim_date</text>
+<text x="930" y="335" class="small">fact_sales</text>
+<text x="930" y="385" class="text">Consumers</text>
+<text x="930" y="415" class="small">Power BI</text>
+<text x="930" y="445" class="small">SQL Analytics</text>
+
+<path d="M230 305 H290" class="arrow"/>
+<path d="M530 305 H590" class="arrow"/>
+<path d="M830 305 H890" class="arrow"/>
+</svg>
